@@ -162,12 +162,16 @@
         android:id="@+id/tvInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#424242"
-        android:textSize="18sp"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/game_toolbar"
-        android:layout_margin="16dp"
-        android:padding="8dp"
+
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:elegantTextHeight="false"
+        android:fontFamily="serif-monospace"
+        android:shadowColor="@android:color/darker_gray"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="Start h g giig kjgkj kjg"
         />
 
     <!--Button to reset game board-->
@@ -176,6 +180,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/glGameBoard"
+
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:layout_marginStart="35dp"
@@ -183,7 +188,8 @@
         android:padding="8dp"
         android:text="@string/reset"
         android:textSize="18sp"
-        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
         android:background="@drawable/button_selector"
         />
 

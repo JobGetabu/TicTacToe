@@ -16,6 +16,7 @@
 
 package com.job.tictactoe;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -370,6 +371,10 @@ public class GameActivity extends AppCompatActivity {
 
                 break;
             case  R.id.main_menu_by5:
+                resetBoard();
+                Intent longGameIntent = new Intent(GameActivity.this,LongGameActivity.class);
+                longGameIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(longGameIntent);
                 //do a reset
 
                 break;

@@ -4,4 +4,6 @@
     <string name="playby5">3 Boards</string>
     <string name="playby3">5 Boards</string>
     <string name="forfeit">Forfeit</string>
+    <string name="_1_player">1 Player</string>
+    <string name="_2_player">2 Player</string>
 </resources>
