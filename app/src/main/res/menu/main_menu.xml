@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/main_menu_by5"
+        android:title="@string/playby5" />
+    <item
+        android:id="@+id/main_menu_by3"
+        android:title="@string/playby3" />
+    <item
+        android:id="@+id/main_menu_forfeit"
+        android:title="@string/forfeit" />
 </menu>

@@ -18,7 +18,10 @@ package com.job.tictactoe;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -37,6 +40,8 @@ public class GameActivity extends AppCompatActivity {
     boolean PLAYER_X = true;
     int TURN_COUNT = 0;
     int[][] boardStatus = new int[3][3];
+
+    @BindView(R.id.game_toolbar) Toolbar mToolbar;
 
     @BindView(R.id.b00)Button b00;
     @BindView(R.id.b01)Button b01;
@@ -63,6 +68,9 @@ public class GameActivity extends AppCompatActivity {
 
         //binding views
         ButterKnife.bind(this);
+
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setTitle("TicTacToe");
 
         initializeBoardStatus();
     }
@@ -324,5 +332,34 @@ public class GameActivity extends AppCompatActivity {
 
             checkWinner();
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //return super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.main_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        //return super.onOptionsItemSelected(item);
+        int id = item.getItemId();
+        switch (id){
+            case R.id.main_menu_by3:
+                //do a reset
+
+                break;
+            case  R.id.main_menu_by5:
+                //do a reset
+
+                break;
+            case R.id.main_menu_forfeit:
+                //do a exit back to main
+
+                break;
+        }
+
+        return true;
     }
 }
