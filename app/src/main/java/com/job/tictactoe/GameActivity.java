@@ -180,7 +180,7 @@ public class GameActivity extends AppCompatActivity {
         }
     }
 
-    @OnClick({R.id.b00,R.id.b01,R.id.b02, R.id.b10,R.id.b11,R.id.b12, R.id.b20,R.id.b21,R.id.b22})
+    @OnClick({R.id.b00,R.id.b01,R.id.b02, R.id.b10,R.id.b11,R.id.b12, R.id.b20,R.id.b21,R.id.b22, R.id.bReset})
     public void playButtonClick(View view) {
         Log.d(TAG, "Inside onClick");
 
