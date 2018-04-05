@@ -24,6 +24,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,23 +44,23 @@ public class GameActivity extends AppCompatActivity {
 
     @BindView(R.id.game_toolbar) Toolbar mToolbar;
 
-    @BindView(R.id.b00)Button b00;
-    @BindView(R.id.b01)Button b01;
-    @BindView(R.id.b02)Button b02;
+    @BindView(R.id.b00)ImageButton b00;
+    @BindView(R.id.b01)ImageButton b01;
+    @BindView(R.id.b02)ImageButton b02;
 
-    @BindView(R.id.b10)Button b10;
-    @BindView(R.id.b11)Button b11;
-    @BindView(R.id.b12)Button b12;
+    @BindView(R.id.b10)ImageButton b10;
+    @BindView(R.id.b11)ImageButton b11;
+    @BindView(R.id.b12)ImageButton b12;
 
-    @BindView(R.id.b20)Button b20;
-    @BindView(R.id.b21)Button b21;
-    @BindView(R.id.b22)Button b22;
+    @BindView(R.id.b20)ImageButton b20;
+    @BindView(R.id.b21)ImageButton b21;
+    @BindView(R.id.b22)ImageButton b22;
 
     @BindView(R.id.bReset)Button btnReset;
     @BindView(R.id.tvInfo)TextView tvInfo;
 
     @BindViews({R.id.b00,R.id.b01,R.id.b02, R.id.b10,R.id.b11,R.id.b12, R.id.b20,R.id.b21,R.id.b22})
-    List<Button> playButtonList;
+    List<ImageButton> playButtonList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,8 +100,8 @@ public class GameActivity extends AppCompatActivity {
 
     static final ButterKnife.Action<View> NULLTEXT = new ButterKnife.Action<View>() {
         @Override public void apply(View view, int index) {
-            Button button = (Button)view;
-            button.setText("");
+            ImageButton imgbtn = (ImageButton) view;
+            imgbtn.setImageDrawable(null);
         }
     };
 
@@ -197,11 +198,13 @@ public class GameActivity extends AppCompatActivity {
         switch (view.getId()){
             case R.id.b00:
                 if(PLAYER_X){
-                    b00.setText("X");
+                    //b00.setText("X");
+                    b00.setImageDrawable(getDrawable(R.drawable.x_mark));
                     boardStatus[0][0] = 1;
                 }
                 else{
-                    b00.setText("0");
+                    //b00.setText("0");
+                    b00.setImageDrawable(getDrawable(R.drawable.o_mark));
                     boardStatus[0][0] = 0;
                 }
                 b00.setEnabled(false);
@@ -209,11 +212,13 @@ public class GameActivity extends AppCompatActivity {
 
             case R.id.b01:
                 if(PLAYER_X){
-                    b01.setText("X");
+                    //b01.setText("X");
+                    b01.setImageDrawable(getDrawable(R.drawable.x_mark));
                     boardStatus[0][1] = 1;
                 }
                 else{
-                    b01.setText("0");
+                    //b01.setText("0");
+                    b01.setImageDrawable(getDrawable(R.drawable.o_mark));
                     boardStatus[0][1] = 0;
                 }
                 b01.setEnabled(false);
@@ -221,11 +226,13 @@ public class GameActivity extends AppCompatActivity {
 
             case R.id.b02:
                 if(PLAYER_X){
-                    b02.setText("X");
+                    //b02.setText("X");
+                    b02.setImageDrawable(getDrawable(R.drawable.x_mark));
                     boardStatus[0][2] = 1;
                 }
                 else{
-                    b02.setText("0");
+                    //b02.setText("0");
+                    b02.setImageDrawable(getDrawable(R.drawable.o_mark));
                     boardStatus[0][2] = 0;
                 }
                 b02.setEnabled(false);
@@ -233,11 +240,13 @@ public class GameActivity extends AppCompatActivity {
 
             case R.id.b10:
                 if(PLAYER_X){
-                    b10.setText("X");
+                    //b10.setText("X");
+                    b10.setImageDrawable(getDrawable(R.drawable.x_mark));
                     boardStatus[1][0] = 1;
                 }
                 else{
-                    b10.setText("0");
+                    //b10.setText("0");
+                    b10.setImageDrawable(getDrawable(R.drawable.o_mark));
                     boardStatus[1][0] = 0;
                 }
                 b10.setEnabled(false);
@@ -245,11 +254,13 @@ public class GameActivity extends AppCompatActivity {
 
             case R.id.b11:
                 if(PLAYER_X){
-                    b11.setText("X");
+                    //b11.setText("X");
+                    b11.setImageDrawable(getDrawable(R.drawable.x_mark));
                     boardStatus[1][1] = 1;
                 }
                 else{
-                    b11.setText("0");
+                    //b11.setText("0");
+                    b11.setImageDrawable(getDrawable(R.drawable.o_mark));
                     boardStatus[1][1] = 0;
                 }
                 b11.setEnabled(false);
@@ -257,11 +268,13 @@ public class GameActivity extends AppCompatActivity {
 
             case R.id.b12:
                 if(PLAYER_X){
-                    b12.setText("X");
+                    //b12.setText("X");
+                    b12.setImageDrawable(getDrawable(R.drawable.x_mark));
                     boardStatus[1][2] = 1;
                 }
                 else{
-                    b12.setText("0");
+                    //b12.setText("0");
+                    b12.setImageDrawable(getDrawable(R.drawable.o_mark));
                     boardStatus[1][2] = 0;
                 }
                 b12.setEnabled(false);
@@ -269,11 +282,13 @@ public class GameActivity extends AppCompatActivity {
 
             case R.id.b20:
                 if(PLAYER_X){
-                    b20.setText("X");
+                    //b20.setText("X");
+                    b20.setImageDrawable(getDrawable(R.drawable.x_mark));
                     boardStatus[2][0] = 1;
                 }
                 else{
-                    b20.setText("0");
+                    //b20.setText("0");
+                    b20.setImageDrawable(getDrawable(R.drawable.o_mark));
                     boardStatus[2][0] = 0;
                 }
                 b20.setEnabled(false);
@@ -281,11 +296,13 @@ public class GameActivity extends AppCompatActivity {
 
             case R.id.b21:
                 if(PLAYER_X){
-                    b21.setText("X");
+                    //b21.setText("X");
+                    b21.setImageDrawable(getDrawable(R.drawable.x_mark));
                     boardStatus[2][1] = 1;
                 }
                 else{
-                    b21.setText("0");
+                    //b21.setText("0");
+                    b21.setImageDrawable(getDrawable(R.drawable.o_mark));
                     boardStatus[2][1] = 0;
                 }
                 b21.setEnabled(false);
@@ -293,11 +310,13 @@ public class GameActivity extends AppCompatActivity {
 
             case R.id.b22:
                 if(PLAYER_X){
-                    b22.setText("X");
+                    //b22.setText("X");
+                    b22.setImageDrawable(getDrawable(R.drawable.x_mark));
                     boardStatus[2][2] = 1;
                 }
                 else{
-                    b22.setText("0");
+                    //b22.setText("0");
+                    b22.setImageDrawable(getDrawable(R.drawable.o_mark));
                     boardStatus[2][2] = 0;
                 }
                 b22.setEnabled(false);

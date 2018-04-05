@@ -35,123 +35,123 @@
         <!--Row 1-->
         <TableRow>
 
-            <Button
+            <ImageButton
                 android:id="@+id/b00"
+                style="@android:style/Animation.Dialog"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:textSize="22sp"
-                android:textColor="#FFFFFF"
-                android:background="@color/colorAccent"
-                android:gravity="center"
                 android:layout_margin="8dp"
-                style="@style/Widget.AppCompat.Button"
-                />
+                android:background="@color/colorPrimary"
+                android:elevation="4dp"
+                android:scaleType="fitCenter"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/b01"
+                style="@style/Widget.AppCompat.Button"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:textSize="22sp"
-                android:textColor="#FFFFFF"
-                android:background="@color/colorAccent"
-                android:gravity="center"
                 android:layout_margin="8dp"
-                style="@style/Widget.AppCompat.Button"
-                />
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/b02"
+                style="@style/Widget.AppCompat.Button"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:textSize="22sp"
-                android:textColor="#FFFFFF"
-                android:background="@color/colorAccent"
-                android:gravity="center"
                 android:layout_margin="8dp"
-                style="@style/Widget.AppCompat.Button"
-                />
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
 
         </TableRow>
 
         <!--Row 2-->
         <TableRow>
 
-            <Button
+            <ImageButton
                 android:id="@+id/b10"
+                style="@style/Widget.AppCompat.Button"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:textSize="22sp"
-                android:textColor="#FFFFFF"
-                android:background="@color/colorAccent"
-                android:gravity="center"
                 android:layout_margin="8dp"
-                style="@style/Widget.AppCompat.Button"
-                />
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/b11"
+                style="@style/Widget.AppCompat.Button"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:textSize="22sp"
-                android:textColor="#FFFFFF"
-                android:background="@color/colorAccent"
-                android:gravity="center"
                 android:layout_margin="8dp"
-                style="@style/Widget.AppCompat.Button"
-                />
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/b12"
+                style="@style/Widget.AppCompat.Button"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:textSize="22sp"
-                android:textColor="#FFFFFF"
-                android:background="@color/colorAccent"
-                android:gravity="center"
                 android:layout_margin="8dp"
-                style="@style/Widget.AppCompat.Button"
-                />
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
 
         </TableRow>
 
         <!--Row 3-->
         <TableRow>
 
-            <Button
+            <ImageButton
                 android:id="@+id/b20"
+                style="@style/Widget.AppCompat.Button"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:textSize="22sp"
-                android:textColor="#FFFFFF"
-                android:background="@color/colorAccent"
-                android:gravity="center"
                 android:layout_margin="8dp"
-                style="@style/Widget.AppCompat.Button"
-                />
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/b21"
+                style="@style/Widget.AppCompat.Button"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:textSize="22sp"
-                android:textColor="#FFFFFF"
-                android:background="@color/colorAccent"
-                android:gravity="center"
                 android:layout_margin="8dp"
-                style="@style/Widget.AppCompat.Button"
-                />
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/b22"
+                style="@style/Widget.AppCompat.Button"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:textSize="22sp"
-                android:textColor="#FFFFFF"
-                android:background="@color/colorAccent"
-                android:gravity="center"
                 android:layout_margin="8dp"
-                style="@style/Widget.AppCompat.Button"
-                />
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
 
         </TableRow>
 
