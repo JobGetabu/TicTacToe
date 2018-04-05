@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         val longGameIntent = Intent(this@MainActivity, LongGameActivity::class.java)
         longGameIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         startActivity(longGameIntent)
+        finish()
     }
 
     @OnClick(R.id.main_player2)
@@ -34,5 +35,6 @@ class MainActivity : AppCompatActivity() {
         val shortGameIntent = Intent(this@MainActivity, GameActivity::class.java)
         shortGameIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         startActivity(shortGameIntent)
+        finish()
     }
 }
